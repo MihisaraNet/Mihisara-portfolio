@@ -22,15 +22,47 @@ export default function Contact() {
     setErrors(errs)
     if (Object.keys(errs).length > 0) return
     setLoading(true)
-    await new Promise(r => setTimeout(r, 1500))
-    setLoading(false)
-    setSubmitted(true)
-    setForm({ name: '', email: '', subject: '', message: '' })
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY || '8f8561e2-4171-4fd1-b8bf-52cfb7ad646c'
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: form.name,
+          email: form.email,
+          subject: form.subject || 'New Portfolio Contact Form Submission',
+          message: form.message,
+          from_name: 'Isula Mihisara Portfolio'
+        })
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitted(true)
+        setForm({ name: '', email: '', subject: '', message: '' })
+        // Clear success state after 6 seconds
+        setTimeout(() => setSubmitted(false), 6000)
+      } else {
+        setErrors(prev => ({ ...prev, submit: result.message || 'Something went wrong. Please try again.' }))
+      }
+    } catch (err) {
+      setErrors(prev => ({ ...prev, submit: 'Failed to send message. Please check your internet connection.' }))
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-    if (errors[e.target.name]) setErrors(er => ({ ...er, [e.target.name]: '' }))
+    // Clear field-specific error and also the global submit error if any
+    setErrors(er => ({ ...er, [e.target.name]: '', submit: '' }))
   }
 
   return (
@@ -153,6 +185,11 @@ export default function Contact() {
               {submitted && (
                 <div className="form-success">
                   <span>✓</span> Message sent! I'll get back to you within 24 hours.
+                </div>
+              )}
+              {errors.submit && (
+                <div className="form-error" style={{ textAlign: 'center', marginTop: '16px', color: '#ef4444' }}>
+                  ⚠️ {errors.submit}
                 </div>
               )}
             </form>
