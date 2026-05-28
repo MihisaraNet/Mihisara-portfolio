@@ -23,7 +23,7 @@ const projects = [
     title: 'StudyNova — Smart Student Study Planner App',
     desc: 'A comprehensive academic organizer designed to optimize study habits. Features a React Native mobile frontend with custom analytics charts and state management, backed by a Spring Boot REST API secured with Spring Security, JWT, and MongoDB.',
     featured: true,
-    github: 'https://github.com/MihisaraNet/StudyNova.git',
+    github: 'https://github.com/MihisaraNet/StudyNova',
     live: null
   },
   {
@@ -35,8 +35,32 @@ const projects = [
     title: 'LayerForge 3D — Custom 3D Printing Marketplace',
     desc: 'A premium end-to-end e-commerce and 3D printing service platform. Features a custom 3D printing wizard supporting STL uploads, print material selection (PLA/ABS/Resin), dynamic cost/price calculators, a role-based admin dashboard, and JWT-secured REST APIs.',
     featured: false,
-    github: 'https://github.com/MihisaraNet/Ceylon-3D.git',
-    live: 'https://layerforge3d.vercel.app/'
+    github: 'https://github.com/MihisaraNet/Ceylon-3D',
+    live: 'https://print-ten-kohl.vercel.app'
+  },
+  {
+    id: 'rxflow',
+    category: 'fullstack',
+    icon: '💊',
+    gradient: 'linear-gradient(135deg, #10b98122 0%, #3b82f622 100%)',
+    tags: ['Spring Boot 3', 'React', 'Vite', 'MySQL', 'JWT', 'RBAC'],
+    title: 'RxFlow — Enterprise Pharmacy Management System',
+    desc: 'An enterprise-grade, full-stack pharmacy management system. Features secure JWT role-based access control, batch expiry tracking, automated low-stock and sales reporting, and a streamlined administrative dashboard built with Spring Boot 3, React (Vite), and MySQL.',
+    featured: false,
+    github: 'https://github.com/MihisaraNet/Pharmacy-Management-System',
+    live: null
+  },
+  {
+    id: 'rentalx',
+    category: 'fullstack',
+    icon: '🚗',
+    gradient: 'linear-gradient(135deg, #f59e0b22 0%, #ef444422 100%)',
+    tags: ['Spring Boot', 'Java 21', 'OOP', 'JavaScript', 'REST API', 'File Storage'],
+    title: 'RentalX — Vehicle Rental Management System',
+    desc: 'A modular, zero-dependency vehicle rental application showcasing OOP and clean N-tier architecture. Engineered with a Spring Boot backend, a custom file-based .txt storage engine, custom sorting algorithms, and a dynamic ES6 JavaScript frontend.',
+    featured: false,
+    github: 'https://github.com/MihisaraNet/RentalX',
+    live: null
   },
 ]
 
