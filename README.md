@@ -1,73 +1,122 @@
-# React + TypeScript + Vite
+# Mihisara Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React**, **TypeScript**, and **Vite** — showcasing my projects, skills, and journey as a Software Engineering undergraduate.
 
-Currently, two official plugins are available:
+🌐 **Live Site:** [mihisara-portfolio.vercel.app](https://mihisara-portfolio.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero Section** — Animated typewriter role text, stats counter, and tech badges
+- **About** — Interactive code-window card with personal info
+- **Skills** — Animated skill bars with tech logo carousel
+- **Projects** — Filterable project grid with featured badge, live demo & GitHub links
+- **Education** — Academic timeline
+- **Contact** — Functional contact form powered by Web3Forms
+- **Scroll Animations** — Reveal-on-scroll transitions throughout
+- **Fully Responsive** — Mobile-first layout across all screen sizes
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Category | Technology |
+|---|---|
+| Framework | React 19 + TypeScript |
+| Build Tool | Vite 8 |
+| Styling | Vanilla CSS (custom design system) |
+| Contact Form | Web3Forms API |
+| Deployment | Vercel |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Hero.tsx         # Landing section with typewriter & stats
+│   ├── About.tsx        # About me with code-window card
+│   ├── Skills.tsx       # Skill bars & tech logo grid
+│   ├── Projects.tsx     # Filterable project showcase
+│   ├── Education.tsx    # Academic timeline
+│   ├── Contact.tsx      # Contact form (Web3Forms)
+│   ├── Footer.tsx       # Footer with social links
+│   └── Shared.tsx       # Reusable components (Reveal, Counter, Typewriter, SkillBar)
+├── index.css            # Global styles & design tokens
+└── main.tsx             # App entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- Node.js ≥ 18
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/MihisaraNet/Mihisara-portfolio.git
+cd Mihisara-portfolio
+
+# Install dependencies
+npm install
 ```
+
+### Environment Variables
+
+Create a `.env` file in the root directory (see `.env.example`):
+
+```env
+VITE_WEB3FORMS_KEY=your_web3forms_access_key
+```
+
+Get a free key at [web3forms.com](https://web3forms.com).
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 🗂 Featured Projects
+
+| Project | Tech | Links |
+|---|---|---|
+| 🎓 **StudyNova** — Smart Student Study Planner | React Native, Spring Boot, MongoDB, JWT | [GitHub](https://github.com/MihisaraNet/StudyNova) |
+| 🖨️ **LayerForge 3D** — Custom 3D Printing Marketplace | React Native, Node.js, Express, MongoDB | [GitHub](https://github.com/MihisaraNet/Ceylon-3D) · [Live](https://print-ten-kohl.vercel.app) |
+| 💊 **RxFlow** — Enterprise Pharmacy Management System | Spring Boot 3, React, Vite, MySQL, JWT | [GitHub](https://github.com/MihisaraNet/Pharmacy-Management-System) |
+| 🚗 **RentalX** — Vehicle Rental Management System | Spring Boot, Java 21, OOP, JavaScript | [GitHub](https://github.com/MihisaraNet/RentalX) |
+
+---
+
+## 📬 Contact
+
+- **Email:** Connect via the [contact form](https://mihisara-portfolio.vercel.app/#contact) on the site
+- **GitHub:** [@MihisaraNet](https://github.com/MihisaraNet)
+- **LinkedIn:** [Isula Mihisara](https://linkedin.com/in/isula-mihisara)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
