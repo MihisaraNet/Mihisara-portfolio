@@ -36,7 +36,7 @@ const projects = [
     desc: 'A premium end-to-end e-commerce and 3D printing service platform. Features a custom 3D printing wizard supporting STL uploads, print material selection (PLA/ABS/Resin), dynamic cost/price calculators, a role-based admin dashboard, and JWT-secured REST APIs.',
     featured: false,
     github: 'https://github.com/MihisaraNet/Ceylon-3D',
-    live: 'https://print-ten-kohl.vercel.app'
+    live: 'layerforge3d.vercel.app'
   },
   {
     id: 'rxflow',
