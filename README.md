@@ -104,7 +104,7 @@ npm run preview
 |---|---|---|
 | 🎓 **StudyNova** — Smart Student Study Planner | React Native, Spring Boot, MongoDB, JWT | [GitHub](https://github.com/MihisaraNet/StudyNova) |
 | 🖨️ **LayerForge 3D** — Custom 3D Printing Marketplace | React Native, Node.js, Express, MongoDB | [GitHub](https://github.com/MihisaraNet/Ceylon-3D) · [Live](https://print-ten-kohl.vercel.app) |
-| 💊 **RxFlow** — Enterprise Pharmacy Management System | Spring Boot 3, React, Vite, MySQL, JWT | [GitHub](https://github.com/MihisaraNet/Pharmacy-Management-System) |
+| 💊 **MediCare** — Enterprise Pharmacy Management System | Spring Boot 3, React, Vite, MySQL, JWT | [GitHub](https://github.com/MihisaraNet/Pharmacy-Management-System) |
 | 🚗 **RentalX** — Vehicle Rental Management System | Spring Boot, Java 21, OOP, JavaScript | [GitHub](https://github.com/MihisaraNet/RentalX) |
 
 ---
