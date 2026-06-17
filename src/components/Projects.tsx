@@ -100,13 +100,7 @@ export default function Projects() {
             <Reveal key={p.id} delay={i * 80}>
               <article className={`project-card glass-card ${p.featured ? 'featured' : ''}`}>
                 {p.featured && <div className="featured-badge">⭐ Featured</div>}
-                <div className="project-image" style={{ background: p.image ? `url(${p.image}) center/cover no-repeat` : p.gradient }}>
-                  {!p.image && <div className="project-image-icon">{p.icon}</div>}
-                  <div className="project-overlay">
-                    {p.live && <a href={p.live} target="_blank" rel="noopener noreferrer" className="btn btn-sm">View Live</a>}
-                    {p.github && <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-ghost">GitHub</a>}
-                  </div>
-                </div>
+
                 <div className="project-content">
                   <div className="project-tags">
                     {p.tags.map(t => <span key={t} className="project-tag">{t}</span>)}

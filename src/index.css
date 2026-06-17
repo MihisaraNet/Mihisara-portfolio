@@ -316,16 +316,7 @@ img { max-width: 100%; display: block; }
   color: white; font-size: 0.75rem; font-weight: 600; padding: 4px 12px;
   border-radius: 50px; z-index: 2;
 }
-.project-image { height: 200px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-.project-card.featured .project-image { height: 240px; }
-.project-image-icon { font-size: 4rem; transition: var(--transition); }
-.project-overlay {
-  position: absolute; inset: 0; background: rgba(5,8,18,0.85); backdrop-filter: blur(8px);
-  display: flex; align-items: center; justify-content: center; gap: 12px;
-  opacity: 0; transition: var(--transition);
-}
-.project-card:hover .project-overlay { opacity: 1; }
-.project-card:hover .project-image-icon { transform: scale(0.8); }
+
 .project-content { padding: 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .project-tag {
