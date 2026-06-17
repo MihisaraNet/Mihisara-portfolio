@@ -31,6 +31,7 @@ const projects = [
     category: 'fullstack',
     icon: '🖨️',
     gradient: 'linear-gradient(135deg, #f9731622 0%, #ec489922 100%)',
+    image: '/layerforge.png',
     tags: ['React Native', 'Node.js', 'Express', 'MongoDB', 'Expo', 'JWT'],
     title: 'LayerForge 3D — Custom 3D Printing Marketplace',
     desc: 'A premium end-to-end e-commerce and 3D printing service platform. Features a custom 3D printing wizard supporting STL uploads, print material selection (PLA/ABS/Resin), dynamic cost/price calculators, a role-based admin dashboard, and JWT-secured REST APIs.',
@@ -99,8 +100,8 @@ export default function Projects() {
             <Reveal key={p.id} delay={i * 80}>
               <article className={`project-card glass-card ${p.featured ? 'featured' : ''}`}>
                 {p.featured && <div className="featured-badge">⭐ Featured</div>}
-                <div className="project-image" style={{ background: p.gradient }}>
-                  <div className="project-image-icon">{p.icon}</div>
+                <div className="project-image" style={{ background: p.image ? `url(${p.image}) center/cover no-repeat` : p.gradient }}>
+                  {!p.image && <div className="project-image-icon">{p.icon}</div>}
                   <div className="project-overlay">
                     {p.live && <a href={p.live} target="_blank" rel="noopener noreferrer" className="btn btn-sm">View Live</a>}
                     {p.github && <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-ghost">GitHub</a>}
