@@ -19,10 +19,10 @@ const projects = [
     category: 'fullstack',
     icon: '🎓',
     gradient: 'linear-gradient(135deg, #a78bfa22 0%, #06b6d422 100%)',
-    tags: ['React Native', 'Spring Boot', 'MongoDB', 'Spring Security', 'Expo', 'Zustand'],
     title: 'StudyNova — Smart Student Study Planner App',
     desc: 'A comprehensive academic organizer designed to optimize study habits. Features a React Native mobile frontend with custom analytics charts and state management, backed by a Spring Boot REST API secured with Spring Security, JWT, and MongoDB.',
-    featured: true,
+    tags: ['React Native', 'Spring Boot', 'MongoDB', 'Spring Security', 'Expo', 'Zustand'],
+    featured: false ,
     github: 'https://github.com/MihisaraNet/StudyNova',
     live: null
   },
@@ -102,11 +102,11 @@ export default function Projects() {
                 {p.featured && <div className="featured-badge">⭐ Featured</div>}
 
                 <div className="project-content">
+                  <h3 className="project-title">{p.title}</h3>
+                  <p className="project-desc">{p.desc}</p>
                   <div className="project-tags">
                     {p.tags.map(t => <span key={t} className="project-tag">{t}</span>)}
                   </div>
-                  <h3 className="project-title">{p.title}</h3>
-                  <p className="project-desc">{p.desc}</p>
                   <div className="project-links">
                     {p.live && <a href={p.live} target="_blank" rel="noopener noreferrer" className="project-link"><ArrowIcon /> Live Demo</a>}
                     {p.github && <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link"><GithubIcon /> Source</a>}
