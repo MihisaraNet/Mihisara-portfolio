@@ -39,12 +39,12 @@ const projects = [
     live: 'https://print-ten-kohl.vercel.app'
   },
   {
-    id: 'rxflow',
+    id: 'medicare',
     category: 'fullstack',
     icon: '💊',
     gradient: 'linear-gradient(135deg, #10b98122 0%, #3b82f622 100%)',
     tags: ['Spring Boot 3', 'React', 'Vite', 'MySQL', 'JWT', 'RBAC'],
-    title: 'RxFlow — Enterprise Pharmacy Management System',
+    title: 'MediCare — Enterprise Pharmacy Management System',
     desc: 'An enterprise-grade, full-stack pharmacy management system. Features secure JWT role-based access control, batch expiry tracking, automated low-stock and sales reporting, and a streamlined administrative dashboard built with Spring Boot 3, React (Vite), and MySQL.',
     featured: false,
     github: 'https://github.com/MihisaraNet/Pharmacy-Management-System',
