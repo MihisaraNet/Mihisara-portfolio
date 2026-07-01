@@ -15,6 +15,18 @@ const GithubIcon = () => (
 
 const projects = [
   {
+    id: 'campustrace',
+    category: 'fullstack',
+    icon: '🎒',
+    gradient: 'linear-gradient(135deg, #8b5cf622 0%, #3b82f622 100%)',
+    title: 'CampusTrace — Lost & Found Web Application',
+    desc: 'A premium MERN stack Lost & Found web application designed for campus communities. Features secure JWT authentication, direct Cloudinary image uploads, claim verification, an admin mediation hub, and a sleek glassmorphic UI with dual-theme support.',
+    tags: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Cloudinary'],
+    featured: true,
+    github: 'https://github.com/MihisaraNet/CampusTrace',
+    live: null
+  },
+  {
     id: 'studynova',
     category: 'fullstack',
     icon: '🎓',
