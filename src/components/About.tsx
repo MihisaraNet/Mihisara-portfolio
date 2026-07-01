@@ -40,7 +40,7 @@ export default function About() {
                   </div>
                 ))}
               </div>
-              <a href="#" className="btn btn-outline">
+              <a href="/Mihisara_CV.pdf" className="btn btn-outline" target="_blank" rel="noopener noreferrer" download>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M8 2V10M8 10L5 7M8 10L11 7M3 14H13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
