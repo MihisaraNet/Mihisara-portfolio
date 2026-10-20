@@ -2,44 +2,45 @@ import { Reveal, SkillBar } from './Shared'
 
 const skillCategories = [
   {
-    icon: '⚡', title: 'Frontend',
+    icon: '⚡', title: 'Frontend & Mobile',
     skills: [
       { name: 'React / Next.js', level: 95 },
-      { name: 'TypeScript', level: 90 },
+      { name: 'TypeScript / JavaScript', level: 92 },
       { name: 'CSS / TailwindCSS', level: 88 },
-      { name: 'Vue.js', level: 70 },
+      { name: 'React Native / Expo', level: 86 },
     ],
   },
   {
-    icon: '🛠', title: 'Backend',
+    icon: '🛠', title: 'Backend Development',
     skills: [
-      { name: 'Node.js / Express', level: 92 },
-      { name: 'Python / Django', level: 85 },
-      { name: 'Java', level: 90 },
-      { name: 'Go (Golang)', level: 70 },
+      { name: 'Spring Boot / Spring Security', level: 92 },
+      { name: 'Java (OOP & Clean Architecture)', level: 90 },
+      { name: 'Node.js / Express.js', level: 90 },
+      { name: 'REST APIs / JWT / RBAC', level: 88 },
     ],
   },
   {
-    icon: '☁', title: 'Cloud & DevOps',
+    icon: '☁', title: 'Databases & Cloud',
     skills: [
-      { name: 'AWS / GCP', level: 88 },
-      { name: 'Docker / Kubernetes', level: 75 },
-      { name: 'PostgreSQL / MongoDB', level: 82 },
-      { name: 'CI/CD Pipelines', level: 70 },
+      { name: 'MongoDB / MySQL / PostgreSQL', level: 88 },
+      { name: 'AWS (EC2, S3)', level: 82 },
+      { name: 'Docker / GitHub Actions CI/CD', level: 80 },
+      { name: 'Git & Version Control', level: 90 },
     ],
   },
 ]
 
 const techLogos = [
+  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg', name: 'Spring Boot' },
   { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', name: 'React' },
   { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', name: 'Node.js' },
   { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', name: 'TypeScript' },
-  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', name: 'Python' },
-  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', name: 'Docker' },
-  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', name: 'PostgreSQL' },
   { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', name: 'Java' },
-  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', name: 'Next.js' },
+  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg', name: 'AWS' },
   { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', name: 'MongoDB' },
+  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', name: 'MySQL' },
+  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', name: 'Docker' },
+  { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg', name: 'Tailwind' },
 ]
 
 export default function Skills() {
