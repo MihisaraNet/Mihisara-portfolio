@@ -52,7 +52,7 @@ export default function Contact() {
       } else {
         setErrors(prev => ({ ...prev, submit: result.message || 'Something went wrong. Please try again.' }))
       }
-    } catch (err) {
+    } catch {
       setErrors(prev => ({ ...prev, submit: 'Failed to send message. Please check your internet connection.' }))
     } finally {
       setLoading(false)
