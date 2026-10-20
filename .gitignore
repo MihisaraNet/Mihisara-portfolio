@@ -30,3 +30,7 @@ dist-ssr
 .env.development
 .env.test
 
+
+# Local data and temporary assets
+repos.json
+public/profile_in_hero.png
