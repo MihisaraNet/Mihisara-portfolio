@@ -1,4 +1,5 @@
 import { Counter, Reveal, Typewriter } from './Shared'
+import profileImg from '../assets/profile.jpg'
 
 export default function Hero() {
   return (
@@ -69,20 +70,7 @@ export default function Hero() {
           <div className="avatar-ring ring-3" />
           <div className="avatar-glow" />
           <div className="avatar-inner">
-            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60" cy="45" r="22" fill="url(#g1)" />
-              <path d="M15 110 Q15 80 60 80 Q105 80 105 110" fill="url(#g2)" />
-              <defs>
-                <linearGradient id="g1" x1="38" y1="23" x2="82" y2="67" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#a78bfa" />
-                  <stop offset="100%" stopColor="#06b6d4" />
-                </linearGradient>
-                <linearGradient id="g2" x1="15" y1="80" x2="105" y2="110" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#a78bfa" />
-                  <stop offset="100%" stopColor="#06b6d4" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <img src={profileImg} alt="Isula Mihisara" className="avatar-img" />
           </div>
           <div className="tech-badges">
             <div className="tech-badge badge-react">⚛ React</div>
