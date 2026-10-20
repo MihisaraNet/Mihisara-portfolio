@@ -97,14 +97,15 @@ export function Reveal({ children, delay = 0 }: { children: React.ReactNode; del
 }
 
 // ---- Typewriter ----
+const TYPEWRITER_WORDS = ['Full Stack Developer', 'SE Undergraduate', 'React Enthusiast', 'Problem Solver']
+
 export function Typewriter() {
-  const words = ['Full Stack Developer', 'SE Undergraduate', 'React Enthusiast', 'Problem Solver']
   const [idx, setIdx] = useState(0)
   const [text, setText] = useState('')
   const [deleting, setDeleting] = useState(false)
 
   useEffect(() => {
-    const word = words[idx % words.length]
+    const word = TYPEWRITER_WORDS[idx % TYPEWRITER_WORDS.length]
     const timeout = setTimeout(() => {
       if (!deleting) {
         setText(word.slice(0, text.length + 1))
