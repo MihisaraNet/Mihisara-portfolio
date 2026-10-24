@@ -34,9 +34,9 @@ export function Navbar() {
   ]
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} aria-label="Main Navigation">
       <div className="nav-container">
-        <a href="#hero" className="nav-logo">
+        <a href="#hero" className="nav-logo" aria-label="Isula Mihisara Portfolio Home">
           <span className="logo-bracket">&lt;</span>
           <span className="logo-name">IM</span>
           <span className="logo-bracket">/&gt;</span>
@@ -59,12 +59,14 @@ export function Navbar() {
         <button
           className={`hamburger ${menuOpen ? 'active' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-nav-menu"
         >
           <span /><span /><span />
         </button>
       </div>
-      <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+      <div id="mobile-nav-menu" className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         {links.map(l => (
           <a key={l.href} href={l.href} className="nav-link" onClick={() => setMenuOpen(false)}>
             {l.label}
@@ -97,7 +99,17 @@ export function Reveal({ children, delay = 0 }: { children: React.ReactNode; del
 }
 
 // ---- Typewriter ----
+<<<<<<< Updated upstream
 const TYPEWRITER_WORDS = ['Full Stack Developer', 'SE Undergraduate', 'React Enthusiast', 'Problem Solver']
+=======
+const TYPEWRITER_WORDS = [
+  'Software Engineer',
+  'Full-Stack Developer',
+  'IT Undergraduate at SLIIT',
+  'Java & Spring Boot Developer',
+  'React & Next.js Developer',
+]
+>>>>>>> Stashed changes
 
 export function Typewriter() {
   const [idx, setIdx] = useState(0)
@@ -118,7 +130,7 @@ export function Typewriter() {
     return () => clearTimeout(timeout)
   }, [text, deleting, idx])
 
-  return <><span className="typewriter">{text}</span><span className="cursor">|</span></>
+  return <><span className="typewriter">{text}</span><span className="cursor" aria-hidden="true">|</span></>
 }
 
 // ---- Counter ----
@@ -170,7 +182,14 @@ export function SkillBar({ name, level }: { name: string; level: number }) {
         <span className="skill-name">{name}</span>
         <span className="skill-level">{level}%</span>
       </div>
-      <div className="skill-bar">
+      <div
+        className="skill-bar"
+        role="progressbar"
+        aria-valuenow={level}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`${name} proficiency: ${level}%`}
+      >
         <div
           className={`skill-fill ${animated ? 'animated' : ''}`}
           style={{ '--target-width': `${level}%` } as React.CSSProperties}
