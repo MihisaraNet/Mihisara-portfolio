@@ -84,7 +84,6 @@ export default function Hero() {
           <div className="avatar-ring ring-3" />
           <div className="avatar-glow" />
           <div className="avatar-inner">
-<<<<<<< Updated upstream
             <img src={profileImg} alt="Isula Mihisara" className="avatar-img" />
           </div>
           <div className="tech-badges">
@@ -92,15 +91,6 @@ export default function Hero() {
             <div className="tech-badge badge-node">⬡ Node.js</div>
             <div className="tech-badge badge-ts">TS</div>
             <div className="tech-badge badge-db">⛃ DB</div>
-=======
-            <img
-              src="/profile_in_hero.png"
-              alt="Isula Mihisara portrait"
-              width="240"
-              height="240"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
-            />
->>>>>>> Stashed changes
           </div>
         </div>
       </div>

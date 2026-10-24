@@ -99,9 +99,6 @@ export function Reveal({ children, delay = 0 }: { children: React.ReactNode; del
 }
 
 // ---- Typewriter ----
-<<<<<<< Updated upstream
-const TYPEWRITER_WORDS = ['Full Stack Developer', 'SE Undergraduate', 'React Enthusiast', 'Problem Solver']
-=======
 const TYPEWRITER_WORDS = [
   'Software Engineer',
   'Full-Stack Developer',
@@ -109,7 +106,6 @@ const TYPEWRITER_WORDS = [
   'Java & Spring Boot Developer',
   'React & Next.js Developer',
 ]
->>>>>>> Stashed changes
 
 export function Typewriter() {
   const [idx, setIdx] = useState(0)

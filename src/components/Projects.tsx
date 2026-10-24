@@ -7,53 +7,22 @@ const ArrowIcon = () => (
   </svg>
 )
 
-const StarIcon = () => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" strokeWidth="1">
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-  </svg>
-)
-
 const GithubIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.071 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
   </svg>
 )
 
-<<<<<<< Updated upstream
-interface Project {
-  id: string
-  category: 'fullstack' | 'frontend' | 'backend'
-  categories?: ('fullstack' | 'frontend' | 'backend')[]
-  icon: string
-  gradient: string
-  tags: string[]
-  title: string
-  desc: string
-  featured: boolean
-  github: string
-  live: string | null
-  stars?: number
-}
+const StarIcon = () => (
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="#fbbf24" aria-hidden="true">
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+  </svg>
+)
 
-const projects: Project[] = [
-  {
-    id: 'layerforge',
-    category: 'fullstack',
-    categories: ['fullstack'],
-    icon: '🖨️',
-    gradient: 'linear-gradient(135deg, #f9731622 0%, #ec489922 100%)',
-    tags: ['React Native', 'Node.js', 'Express', 'MongoDB', 'Expo', 'JWT'],
-    title: 'LayerForge 3D — Custom 3D Printing Marketplace',
-    desc: 'A premium end-to-end e-commerce and 3D printing service platform. Features a custom 3D printing wizard supporting STL uploads, print material selection (PLA/ABS/Resin), dynamic cost/price calculators, a role-based admin dashboard, and JWT-secured REST APIs.',
-    featured: true,
-    github: 'https://github.com/MihisaraNet/LayerForge3D',
-    live: 'https://layerforge3d.vercel.app',
-    stars: 6
-  },
-=======
 interface ProjectItem {
   id: string
   category: 'fullstack' | 'frontend' | 'backend'
+  categories?: ('fullstack' | 'frontend' | 'backend')[]
   icon: string
   title: string
   desc: string
@@ -66,10 +35,28 @@ interface ProjectItem {
   featured: boolean
   github: string | null
   live: string | null
+  stars?: number
 }
 
 const projects: ProjectItem[] = [
->>>>>>> Stashed changes
+  {
+    id: 'layerforge',
+    category: 'fullstack',
+    categories: ['fullstack'],
+    icon: '🖨️',
+    title: 'LayerForge 3D — Custom 3D Printing Marketplace',
+    desc: 'An end-to-end e-commerce and 3D printing service portal supporting STL model uploads, dynamic volume/pricing calculators, and admin order tracking.',
+    problem: 'Makers and clients lack a streamlined system to submit custom 3D models, calculate material costs, and monitor print fabrication status in real-time.',
+    solution: 'Created an online service platform featuring automated 3D file pricing calculators, material selections, and order status dashboards.',
+    myRole: 'Engineered dynamic pricing calculators based on material density and volume, developed backend order APIs, and implemented secure checkout flows.',
+    keyFeatures: '3D STL file upload support, material selection (PLA/ABS/Resin), automated price quoting, role-based admin order tracker.',
+    technicalHighlights: 'Custom volume calculation logic, JWT-secured RESTful endpoints, responsive React interface.',
+    tags: ['React Native', 'Node.js', 'Express', 'MongoDB', 'Expo', 'JWT'],
+    featured: true,
+    github: 'https://github.com/MihisaraNet/LayerForge3D',
+    live: 'https://layerforge3d.vercel.app',
+    stars: 6
+  },
   {
     id: 'campustrace',
     category: 'fullstack',
@@ -101,32 +88,10 @@ const projects: ProjectItem[] = [
     keyFeatures: 'Daily study routine planner, visual productivity charts, exam countdowns, cloud sync across devices.',
     technicalHighlights: 'Spring Security with JWT authentication, clean N-tier backend architecture, optimized mobile JSON payloads.',
     tags: ['React Native', 'Spring Boot', 'MongoDB', 'Spring Security', 'Expo', 'Zustand'],
-<<<<<<< Updated upstream
     featured: false,
     github: 'https://github.com/MihisaraNet/StudyNova',
     live: null,
     stars: 4
-=======
-    featured: false,
-    github: 'https://github.com/MihisaraNet/StudyNova',
-    live: null
-  },
-  {
-    id: 'layerforge',
-    category: 'fullstack',
-    icon: '🖨️',
-    title: 'LayerForge 3D — Custom 3D Printing Marketplace',
-    desc: 'An end-to-end e-commerce and 3D printing service portal supporting STL model uploads, dynamic volume/pricing calculators, and admin order tracking.',
-    problem: 'Makers and clients lack a streamlined system to submit custom 3D models, calculate material costs, and monitor print fabrication status in real-time.',
-    solution: 'Created an online service platform featuring automated 3D file pricing calculators, material selections, and order status dashboards.',
-    myRole: 'Engineered dynamic pricing calculators based on material density and volume, developed backend order APIs, and implemented secure checkout flows.',
-    keyFeatures: '3D STL file upload support, material selection (PLA/ABS/Resin), automated price quoting, role-based admin order tracker.',
-    technicalHighlights: 'Custom volume calculation logic, JWT-secured RESTful endpoints, responsive React interface.',
-    tags: ['React Native', 'Node.js', 'Express', 'MongoDB', 'Expo', 'JWT'],
-    featured: false,
-    github: 'https://github.com/MihisaraNet/Ceylon-3D',
-    live: 'https://layerforge3d.vercel.app'
->>>>>>> Stashed changes
   },
   {
     id: 'medicare',
@@ -149,10 +114,7 @@ const projects: ProjectItem[] = [
   {
     id: 'rentalx',
     category: 'backend',
-<<<<<<< Updated upstream
     categories: ['backend'],
-=======
->>>>>>> Stashed changes
     icon: '🚗',
     title: 'RentalX — Vehicle Rental Management System',
     desc: 'A modular, zero-dependency vehicle rental application showcasing OOP and clean N-tier architecture engineered with Java, Spring Boot, and custom data structures.',
@@ -172,10 +134,14 @@ const projects: ProjectItem[] = [
     category: 'frontend',
     categories: ['frontend'],
     icon: '⚡',
-    gradient: 'linear-gradient(135deg, #06b6d422 0%, #3b82f622 100%)',
-    tags: ['React 19', 'TypeScript', 'Vite', 'CSS3', 'GitHub Actions', 'Vercel'],
     title: 'Developer Portfolio — Modern Interactive Showcase',
     desc: 'A responsive portfolio website engineered with React 19, TypeScript, and Vite. Features custom animations, glassmorphic UI, dynamic project filtering, and automated CI/CD deployment via GitHub Actions to Vercel.',
+    problem: 'Building a modern, performant, and search-optimized developer portfolio to showcase full-stack engineering skills.',
+    solution: 'Created a sleek, interactive portfolio featuring glassmorphic components, accessible forms, and rich schema markup.',
+    myRole: 'Engineered the entire application from UI design tokens to SEO and structured data architecture.',
+    keyFeatures: 'Typewriter role effect, dynamic category filtering, interactive code window, verified contact form.',
+    technicalHighlights: 'CSS design tokens, responsive layout grid, Schema.org JSON-LD knowledge graph integration.',
+    tags: ['React 19', 'TypeScript', 'Vite', 'CSS3', 'GitHub Actions', 'Vercel'],
     featured: false,
     github: 'https://github.com/MihisaraNet/Mihisara-portfolio',
     live: 'https://mihisara-portfolio.vercel.app',
@@ -201,15 +167,10 @@ export default function Projects() {
         <Reveal>
           <div className="section-header">
             <span className="section-tag">03 / Projects</span>
-<<<<<<< Updated upstream
-            <h2 className="section-title">Featured Work</h2>
-            <p className="section-subtitle">A selection of projects I\'ve built — from idea to deployment.</p>
-=======
             <h2 id="projects-heading" className="section-title">Featured Engineering Work</h2>
             <p className="section-subtitle">
               A curated selection of software systems I have designed, engineered, and deployed — highlighting full-stack architectures, clean code, and practical problem-solving.
             </p>
->>>>>>> Stashed changes
           </div>
         </Reveal>
 
@@ -231,13 +192,9 @@ export default function Projects() {
           {filtered.map((p, i) => (
             <Reveal key={p.id} delay={i * 80}>
               <article className={`project-card glass-card ${p.featured ? 'featured' : ''}`}>
-<<<<<<< Updated upstream
-=======
                 {p.featured && <div className="featured-badge" aria-label="Featured project">⭐ Featured</div>}
 
->>>>>>> Stashed changes
                 <div className="project-content">
-                  {p.featured && <div className="featured-badge">⭐ Featured</div>}
                   <h3 className="project-title">{p.title}</h3>
                   <p className="project-desc">{p.desc}</p>
 
@@ -268,14 +225,6 @@ export default function Projects() {
                     {p.tags.map(t => <span key={t} className="project-tag">{t}</span>)}
                   </div>
                   <div className="project-links">
-<<<<<<< Updated upstream
-                    {p.live && <a href={p.live} target="_blank" rel="noopener noreferrer" className="project-link"><ArrowIcon /> Live Demo</a>}
-                    {p.github && <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link"><GithubIcon /> Source</a>}
-                    {p.stars !== undefined && (
-                      <span className="project-stars" title={`${p.stars} stars on GitHub`}>
-                        <StarIcon /> {p.stars}
-                      </span>
-=======
                     {p.live && (
                       <a
                         href={p.live}
@@ -297,7 +246,11 @@ export default function Projects() {
                       >
                         <GithubIcon /> Source Code
                       </a>
->>>>>>> Stashed changes
+                    )}
+                    {p.stars !== undefined && (
+                      <span className="project-stars" title={`${p.stars} stars on GitHub`}>
+                        <StarIcon /> {p.stars}
+                      </span>
                     )}
                   </div>
                 </div>
