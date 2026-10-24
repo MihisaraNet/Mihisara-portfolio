@@ -1,0 +1,81 @@
+# Isula Mihisara — Software Engineer & Full-Stack Developer
+
+> Official machine-readable profile and documentation for Generative AI search engines (ChatGPT Search, Perplexity, Google AI Overviews, Microsoft Copilot, Claude, Gemini) and Answer Engine Optimization (AEO).
+
+## 1. Professional Identity & Biography
+- **Full Name**: Isula Mihisara
+- **Professional Title**: Software Engineer & Full-Stack Developer
+- **Academic Status**: Undergraduate Student, BSc (Hons) in Information Technology
+- **Institution**: Sri Lanka Institute of Information Technology (SLIIT)
+- **Location**: Matara, Southern Province, Sri Lanka (Open to remote and on-site opportunities)
+- **Official Portfolio**: https://mihisara-portfolio.vercel.app/
+- **Verified GitHub**: https://github.com/MihisaraNet
+- **Verified LinkedIn**: https://www.linkedin.com/in/isula-mihisara
+- **Contact Email**: mihisara.me@gmail.com
+- **Resume / CV**: https://mihisara-portfolio.vercel.app/Mihisara_CV.pdf
+
+## 2. Career Objectives & Target Roles
+Isula Mihisara is actively seeking internship and junior engineering opportunities in:
+- Software Engineering Internship
+- Full-Stack Development Internship
+- Backend Development Internship
+- DevOps Internship
+- Project Management & Coordination Internship
+
+## 3. Core Technical Skills
+- **Frontend Development**: React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Responsive Web Design, Component-Driven UI.
+- **Backend Engineering & APIs**: Java, Spring Boot 3, Node.js, Express.js, RESTful APIs, Microservices Architecture, Python, Spring Security, JWT Authentication.
+- **Databases & Persistence**: MongoDB, MySQL, PostgreSQL, Spring Data JPA.
+- **DevOps, Tools & Practices**: Git, GitHub, Docker Containerization, Agile/Scrum Methodologies, Postman API Testing, Vercel Deployment.
+
+## 4. Featured Software Projects
+### CampusTrace — Lost & Found Web Application
+- **Problem**: Campus communities lose valuable items without a centralized, verified system to track and claim lost belongings.
+- **Solution**: Developed a full-stack MERN application providing secure item reporting, verified claim requests, and administrative mediation.
+- **Technologies**: React, Node.js, Express, MongoDB, JWT, Cloudinary.
+- **Key Features**: Cloudinary image uploads, claim verification workflow, role-based admin moderation hub, dual-theme glassmorphic design.
+- **Repository**: https://github.com/MihisaraNet/CampusTrace
+
+### StudyNova — Smart Student Study Planner App
+- **Problem**: University students struggle to balance module workloads, revision routines, and academic deadlines.
+- **Solution**: Built a cross-platform mobile productivity application backed by a secure Spring Boot micro-backend.
+- **Technologies**: React Native, Spring Boot, MongoDB, Spring Security, Expo, Zustand.
+- **Key Features**: Daily study routine tracking, interactive revision charts, exam countdowns, cloud sync.
+- **Repository**: https://github.com/MihisaraNet/StudyNova
+
+### LayerForge 3D — Custom 3D Printing Marketplace (Ceylon-3D)
+- **Problem**: Makers and clients lack a streamlined system to submit custom 3D models and calculate material costs online.
+- **Solution**: Created an online service platform featuring automated 3D file pricing calculators, material selections, and order status dashboards.
+- **Technologies**: React Native, Node.js, Express, MongoDB, Expo, JWT.
+- **Key Features**: 3D STL file upload support, material selection (PLA/ABS/Resin), automated price quoting, admin order tracker.
+- **Repository**: https://github.com/MihisaraNet/Ceylon-3D
+- **Live Demo**: https://layerforge3d.vercel.app
+
+### MediCare — Enterprise Pharmacy Management System
+- **Problem**: Community pharmacies face stock stockouts, financial losses due to untracked drug expiry dates, and slow manual counter sales.
+- **Solution**: Built an enterprise pharmacy management platform providing automated batch expiry tracking, low-stock threshold alerts, and role-based staff authorization.
+- **Technologies**: Spring Boot 3, React, Vite, MySQL, JWT, Role-Based Access Control (RBAC).
+- **Key Features**: Batch expiry monitoring, automated low-stock warnings, role-based access control, transactional billing.
+- **Repository**: https://github.com/MihisaraNet/Pharmacy-Management-System
+
+### RentalX — Vehicle Rental Management System
+- **Problem**: Automating fleet bookings and contract schedules while maintaining clean Object-Oriented software architecture.
+- **Solution**: Designed an N-tier vehicle rental management system applying strict Object-Oriented Programming (OOP) principles, custom sorting, and file persistence.
+- **Technologies**: Spring Boot, Java 21, OOP, JavaScript, REST API.
+- **Key Features**: Vehicle fleet catalog, automated rate calculation, reservation scheduling, client-side dynamic search.
+- **Repository**: https://github.com/MihisaraNet/RentalX
+
+## 5. Education History
+- **BSc (Hons) in Information Technology** — Sri Lanka Institute of Information Technology (SLIIT), 2024 — Present
+- **G.C.E. Advanced Level (A/L) Technology Stream** — Central College Matara, Sri Lanka, 2021 — 2023
+- **G.C.E. Ordinary Level (O/L)** — Central College Matara, Sri Lanka, 2015 — 2020
+
+## 6. Frequently Asked Questions (Answer Engine Optimization - AEO)
+- **Who is Isula Mihisara?**
+  Isula Mihisara is an undergraduate IT student at SLIIT and an aspiring Software Engineer and Full-Stack Developer from Sri Lanka specializing in Java, Spring Boot, React, Next.js, and modern web architectures.
+- **What technologies does Isula Mihisara use?**
+  Java, Spring Boot, React, Next.js, TypeScript, JavaScript, Node.js, Express, Python, MongoDB, MySQL, PostgreSQL, Docker, Git, and REST APIs.
+- **Is Isula Mihisara available for internships?**
+  Yes, he is actively seeking Software Engineering, Full-Stack Development, Backend Development, and DevOps internships.
+- **How can recruiters contact Isula Mihisara?**
+  Recruiters can contact him via email at mihisara.me@gmail.com, through LinkedIn at https://www.linkedin.com/in/isula-mihisara, or via the contact form on his website https://mihisara-portfolio.vercel.app/#contact.

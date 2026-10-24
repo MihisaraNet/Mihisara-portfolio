@@ -1,20 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns# profile: https://ogp.me/ns/profile#">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+
+    <!-- Primary Title & Meta Descriptions -->
+    <title>Isula Mihisara | Software Engineer &amp; Full-Stack Developer</title>
+    <meta name="title" content="Isula Mihisara | Software Engineer &amp; Full-Stack Developer" />
+    <meta
+      name="description"
+      content="Explore the portfolio of Isula Mihisara, an IT undergraduate at SLIIT specializing in full-stack development, Java, Spring Boot, React, Next.js, and software engineering projects."
+    />
+    <meta
+      name="keywords"
+      content="Isula Mihisara, Isula Mihisara developer, Isula Mihisara portfolio, Isula Mihisara software engineer, Isula Mihisara GitHub, Software Engineering Intern Sri Lanka, Full-Stack Developer Sri Lanka, Backend Developer Sri Lanka, Java Spring Boot Developer, React Developer Sri Lanka, IT Undergraduate Portfolio, SLIIT Software Engineering Student, Java Spring Boot Projects, React and Next.js Projects, REST API Development, Microservices Architecture, Full-Stack Web Development, Docker and DevOps Projects"
+    />
+    <meta name="author" content="Isula Mihisara" />
+    <meta name="creator" content="Isula Mihisara" />
+    <meta name="publisher" content="Isula Mihisara" />
+    <link rel="canonical" href="https://mihisara-portfolio.vercel.app/" />
+
+    <!-- Search Engine Verification (Google Search Console) -->
+    <meta name="google-site-verification" content="google97c449e0c840dc65" />
+
+    <!-- Crawlers & Robots Directives -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="Global" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- GEO / Geotargeting Meta Tags (Sri Lanka / Matara / Western & Southern Provinces) -->
+    <meta name="geo.region" content="LK-31" />
+    <meta name="geo.placename" content="Matara, Sri Lanka" />
+    <meta name="geo.position" content="5.9549;80.5550" />
+    <meta name="ICBM" content="5.9549, 80.5550" />
+    <meta name="geo.country" content="LK" />
+
+    <!-- Dublin Core Metadata (SEO & Geo Indexing) -->
+    <meta name="DC.title" content="Isula Mihisara | Software Engineer &amp; Full-Stack Developer" />
+    <meta name="DC.creator" content="Isula Mihisara" />
+    <meta name="DC.subject" content="Software Engineering, Full Stack Web Development, Java, Spring Boot, React, Next.js, TypeScript" />
+    <meta
+      name="DC.description"
+      content="Explore the portfolio of Isula Mihisara, an IT undergraduate at SLIIT specializing in full-stack development, Java, Spring Boot, React, Next.js, and software engineering projects."
+    />
+    <meta name="DC.publisher" content="Isula Mihisara" />
+    <meta name="DC.language" content="en" />
+    <meta name="DC.coverage" content="Matara, Southern Province, Sri Lanka, Global" />
+    <meta name="DC.format" content="text/html" />
+    <meta name="DC.type" content="Text" />
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp / Slack Previews -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Isula Mihisara Portfolio" />
+    <meta property="og:url" content="https://mihisara-portfolio.vercel.app/" />
+    <meta property="og:title" content="Isula Mihisara | Software Engineer &amp; Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Isula Mihisara, an IT undergraduate at SLIIT specializing in full-stack development, Java, Spring Boot, React, Next.js, and software engineering projects."
+    />
+    <meta property="og:image" content="https://mihisara-portfolio.vercel.app/profile_in_hero.png" />
+    <meta property="og:image:secure_url" content="https://mihisara-portfolio.vercel.app/profile_in_hero.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="670" />
+    <meta property="og:image:height" content="521" />
+    <meta property="og:image:alt" content="Isula Mihisara — Software Engineer &amp; Full-Stack Developer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content="Isula" />
+    <meta property="profile:last_name" content="Mihisara" />
+    <meta property="profile:username" content="MihisaraNet" />
+    <meta property="profile:gender" content="male" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MihisaraNet" />
+    <meta name="twitter:creator" content="@MihisaraNet" />
+    <meta name="twitter:title" content="Isula Mihisara | Software Engineer &amp; Full-Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Explore the portfolio of Isula Mihisara, an IT undergraduate at SLIIT specializing in full-stack development, Java, Spring Boot, React, Next.js, and software engineering projects."
+    />
+    <meta name="twitter:image" content="https://mihisara-portfolio.vercel.app/profile_in_hero.png" />
+    <meta name="twitter:image:alt" content="Isula Mihisara — Software Engineer &amp; Full-Stack Developer" />
+
+    <!-- Progressive Web App, Theme & Mobile Optimization -->
+    <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Isula Mihisara Portfolio" />
+    <meta name="apple-mobile-web-app-title" content="Mihisara" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Isula Mihisara — Full Stack Developer crafting high-performance, visually stunning digital experiences." />
-    <meta name="keywords" content="Full Stack Developer, Web Developer, Portfolio, React, Node.js, TypeScript" />
-    <meta property="og:title" content="Isula Mihisara | Full Stack Developer" />
-    <meta property="og:description" content="Full Stack Developer crafting high-performance digital experiences." />
-    <meta property="og:type" content="website" />
-    <title>Isula Mihisara | Full Stack Developer</title>
+    <link rel="apple-touch-icon" href="/profile_in_hero.png" />
+
+    <!-- Generative Engine Optimization (GEO) & Machine-readable Discovery -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="AI &amp; LLM Profile (llms.txt)" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- Performance: Preconnect & DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="dns-prefetch" href="https://api.web3forms.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD Structured Data (Comprehensive Knowledge Graph) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://mihisara-portfolio.vercel.app/#isula",
+            "name": "Isula Mihisara",
+            "givenName": "Isula",
+            "familyName": "Mihisara",
+            "jobTitle": "Software Engineer & Full-Stack Developer",
+            "description": "Information Technology undergraduate at SLIIT specializing in full-stack engineering, Java, Spring Boot, React, Next.js, TypeScript, REST APIs, and microservices architecture.",
+            "url": "https://mihisara-portfolio.vercel.app/",
+            "image": "https://mihisara-portfolio.vercel.app/profile_in_hero.png",
+            "email": "mailto:mihisara.me@gmail.com",
+            "gender": "https://schema.org/Male",
+            "nationality": {
+              "@type": "Country",
+              "name": "Sri Lanka"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Matara",
+              "addressRegion": "Southern Province",
+              "addressCountry": "LK"
+            },
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Sri Lanka Institute of Information Technology (SLIIT)",
+                "url": "https://www.sliit.lk"
+              },
+              {
+                "@type": "EducationalOrganization",
+                "name": "Central College Matara"
+              }
+            ],
+            "sameAs": [
+              "https://github.com/MihisaraNet",
+              "https://www.linkedin.com/in/isula-mihisara"
+            ],
+            "knowsAbout": [
+              "Software Engineering",
+              "Full-Stack Development",
+              "Java",
+              "Spring Boot",
+              "React",
+              "Next.js",
+              "TypeScript",
+              "JavaScript",
+              "Node.js",
+              "Express.js",
+              "REST APIs",
+              "Microservices Architecture",
+              "Python",
+              "MongoDB",
+              "MySQL",
+              "PostgreSQL",
+              "Docker",
+              "Git & GitHub",
+              "Agile Development"
+            ],
+            "seeks": [
+              {
+                "@type": "Demand",
+                "name": "Software Engineering Internship"
+              },
+              {
+                "@type": "Demand",
+                "name": "Full-Stack Development Internship"
+              },
+              {
+                "@type": "Demand",
+                "name": "Backend Development Internship"
+              },
+              {
+                "@type": "Demand",
+                "name": "DevOps Internship"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mihisara-portfolio.vercel.app/#website",
+            "url": "https://mihisara-portfolio.vercel.app/",
+            "name": "Isula Mihisara | Software Engineer & Full-Stack Developer",
+            "description": "Explore the portfolio of Isula Mihisara, an IT undergraduate at SLIIT specializing in full-stack development, Java, Spring Boot, React, Next.js, and software engineering projects.",
+            "inLanguage": "en-US",
+            "author": {
+              "@id": "https://mihisara-portfolio.vercel.app/#isula"
+            },
+            "creator": {
+              "@id": "https://mihisara-portfolio.vercel.app/#isula"
+            }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://mihisara-portfolio.vercel.app/#profilepage",
+            "url": "https://mihisara-portfolio.vercel.app/",
+            "name": "Isula Mihisara Portfolio & CV",
+            "isPartOf": {
+              "@id": "https://mihisara-portfolio.vercel.app/#website"
+            },
+            "mainEntity": {
+              "@id": "https://mihisara-portfolio.vercel.app/#isula"
+            }
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://mihisara-portfolio.vercel.app/#projects-list",
+            "name": "Featured Software Engineering Projects by Isula Mihisara",
+            "itemListElement": [
+              {
+                "@type": "SoftwareSourceCode",
+                "position": 1,
+                "name": "CampusTrace — Lost & Found Web Application",
+                "programmingLanguage": ["JavaScript", "TypeScript", "React", "Node.js", "Express"],
+                "description": "Full-stack MERN application providing secure item reporting, claim verification, and admin mediation.",
+                "codeRepository": "https://github.com/MihisaraNet/CampusTrace"
+              },
+              {
+                "@type": "SoftwareSourceCode",
+                "position": 2,
+                "name": "StudyNova — Smart Student Study Planner App",
+                "programmingLanguage": ["Java", "Spring Boot", "TypeScript", "React Native"],
+                "description": "Academic planning mobile application with custom analytics charts and Spring Boot REST API.",
+                "codeRepository": "https://github.com/MihisaraNet/StudyNova"
+              },
+              {
+                "@type": "SoftwareSourceCode",
+                "position": 3,
+                "name": "LayerForge 3D — Custom 3D Printing Marketplace",
+                "programmingLanguage": ["JavaScript", "React Native", "Node.js", "Express"],
+                "description": "3D printing marketplace with STL file uploads and dynamic material/cost calculation algorithms.",
+                "codeRepository": "https://github.com/MihisaraNet/Ceylon-3D"
+              },
+              {
+                "@type": "SoftwareSourceCode",
+                "position": 4,
+                "name": "MediCare — Enterprise Pharmacy Management System",
+                "programmingLanguage": ["Java", "Spring Boot", "JavaScript", "React", "MySQL"],
+                "description": "Enterprise healthcare management system with batch expiry tracking and role-based access control.",
+                "codeRepository": "https://github.com/MihisaraNet/Pharmacy-Management-System"
+              },
+              {
+                "@type": "SoftwareSourceCode",
+                "position": 5,
+                "name": "RentalX — Vehicle Rental Management System",
+                "programmingLanguage": ["Java", "Spring Boot", "JavaScript"],
+                "description": "Modular vehicle rental application engineered with clean OOP patterns, custom sorting, and N-tier architecture.",
+                "codeRepository": "https://github.com/MihisaraNet/RentalX"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
+    <!-- Accessibility, AEO & Web Spider Fallback (Answer Engine Optimization) -->
+    <noscript>
+      <header>
+        <h1>Isula Mihisara — Software Engineer &amp; Full-Stack Developer</h1>
+        <p>BSc (Hons) in Information Technology Undergraduate at SLIIT | Based in Matara, Sri Lanka</p>
+      </header>
+      <main>
+        <section>
+          <h2>About Isula Mihisara</h2>
+          <p>
+            Isula Mihisara is an Information Technology undergraduate at the Sri Lanka Institute of Information
+            Technology (SLIIT) with expertise in full-stack web development, backend engineering, Java, Spring Boot,
+            React, Next.js, and TypeScript. He is actively seeking Software Engineering, Full-Stack, Backend, or DevOps
+            internships.
+          </p>
+        </section>
+        <section>
+          <h2>Core Technical Skills</h2>
+          <ul>
+            <li><strong>Frontend:</strong> React, Next.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3</li>
+            <li><strong>Backend:</strong> Java, Spring Boot, Node.js, Express, REST APIs, Microservices, Python</li>
+            <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
+            <li><strong>DevOps &amp; Workflow:</strong> Docker, Git, GitHub, Agile / Scrum</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Featured Software Projects</h2>
+          <ul>
+            <li>
+              <strong>CampusTrace:</strong> MERN-stack campus lost and found system with JWT auth and Cloudinary uploads.
+              (<a href="https://github.com/MihisaraNet/CampusTrace">Source Code</a>)
+            </li>
+            <li>
+              <strong>StudyNova:</strong> Cross-platform student productivity app with React Native and Spring Boot.
+              (<a href="https://github.com/MihisaraNet/StudyNova">Source Code</a>)
+            </li>
+            <li>
+              <strong>LayerForge 3D:</strong> On-demand 3D printing marketplace with STL calculations.
+              (<a href="https://github.com/MihisaraNet/Ceylon-3D">Source Code</a>)
+            </li>
+            <li>
+              <strong>MediCare:</strong> Enterprise pharmacy management system built with Spring Boot 3, React, and MySQL.
+              (<a href="https://github.com/MihisaraNet/Pharmacy-Management-System">Source Code</a>)
+            </li>
+            <li>
+              <strong>RentalX:</strong> Vehicle rental management system with clean OOP and Java Spring Boot.
+              (<a href="https://github.com/MihisaraNet/RentalX">Source Code</a>)
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Contact &amp; Profiles</h2>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:mihisara.me@gmail.com">mihisara.me@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/isula-mihisara">linkedin.com/in/isula-mihisara</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/MihisaraNet">github.com/MihisaraNet</a></li>
+            <li><strong>Resume:</strong> <a href="/Mihisara_CV.pdf">Download PDF Resume</a></li>
+          </ul>
+        </section>
+      </main>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
