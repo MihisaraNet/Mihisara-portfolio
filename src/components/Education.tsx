@@ -2,49 +2,41 @@ import { Reveal } from './Shared'
 
 interface EduEntry {
   id: string
-  type: 'degree' | 'school' | 'cert'
-  icon: string
   title: string
   institution: string
   period: string
   status: 'current' | 'completed'
   badge: string
-  badgeColor: string
   desc: string
-  highlights?: string[]
+  highlights: string[]
 }
 
 const educationHistory: EduEntry[] = [
   {
-    id: 'university',
-    type: 'degree',
-    icon: '🎓',
-    title: 'BSc. (Hons) in Information Technology (Undergraduate)',
+    id: 'sliit-degree',
+    title: 'Bachelor of Science (Hons) in Information Technology',
     institution: 'Sri Lanka Institute of Information Technology (SLIIT)',
-    period: '2024 — Present',
+    period: '2024 — Expected 2028',
     status: 'current',
-    badge: 'In Progress',
-    badgeColor: 'badge-current',
-    desc: 'A Software Engineering undergraduate with a passion for full-stack development and problem-solving. Building scalable web applications and creating software solutions that make a real-world impact.',
+    badge: 'Year 3, Semester 2',
+    desc: 'Undergraduate academic degree focused on enterprise full-stack engineering, distributed systems, backend architectures, database design, and cloud deployments.',
     highlights: [
-      'Full Stack Web Development',
-      'Software Architecture & Design Patterns',
-      'Algorithms & Data Structures',
+      'Data Structures & Algorithms',
+      'Software Engineering & Agile',
       'Database Management Systems',
-      'Agile Software Development',
+      'Computer Networks & Protocols',
+      'Operating Systems & Concurrency',
+      'Enterprise Application Development',
     ],
   },
   {
     id: 'alevel',
-    type: 'school',
-    icon: '📘',
-    title: 'G.C.E. Advanced Level (A/L)',
+    title: 'G.C.E. Advanced Level (A/L) — Technology Stream',
     institution: 'Central College — Matara, Sri Lanka',
     period: '2021 — 2023',
     status: 'completed',
-    badge: 'Completed',
-    badgeColor: 'badge-done',
-    desc: 'Completed Advanced Level examinations in the Technology stream with excellent results, forming a strong foundation in technological concepts and practical engineering applications.',
+    badge: 'Technology Stream',
+    desc: 'Completed secondary education in the Technology Stream, building solid mathematical, algorithmic, and practical computing fundamentals.',
     highlights: [
       'Engineering Technology',
       'Science for Technology',
@@ -53,76 +45,73 @@ const educationHistory: EduEntry[] = [
   },
   {
     id: 'olevel',
-    type: 'school',
-    icon: '📗',
     title: 'G.C.E. Ordinary Level (O/L)',
     institution: 'Central College — Matara, Sri Lanka',
     period: '2015 — 2020',
     status: 'completed',
-    badge: 'Completed',
-    badgeColor: 'badge-done',
-    desc: 'Successfully completed Ordinary Level examinations with 9 subjects, demonstrating strong academic performance across all disciplines.',
-    highlights: [
-      '9 Subjects Passed',
-      'Mathematics — B',
-      'Science — B',
-      'English — B',
-    ],
+    badge: 'Secondary Education',
+    desc: 'Completed secondary foundation with 9 subject passes, establishing early discipline in analytical problem-solving and English language communication.',
+    highlights: ['9 Subject Passes', 'Mathematics', 'Science', 'English Language'],
   },
 ]
 
 export default function Education() {
   return (
-    <section id="education" className="section education-section">
+    <section id="education" className="section education-section" aria-labelledby="education-heading">
       <div className="container">
         <Reveal>
           <div className="section-header">
-            <span className="section-tag">04 / Education</span>
-            <h2 className="section-title">Education History</h2>
-            <p className="section-subtitle">My academic journey — from school to university.</p>
+            <span className="section-tag">04 / Education &amp; Foundations</span>
+            <h2 id="education-heading" className="section-title">Academic &amp; Technical Foundation</h2>
+            <p className="section-subtitle">
+              Formal computing degree and rigorous coursework providing the structural basis for my software engineering practices.
+            </p>
           </div>
         </Reveal>
 
-        <div className="edu-timeline">
-          {educationHistory.map((entry, i) => (
-            <Reveal key={entry.id} delay={i * 120}>
-              <div className={`edu-timeline-item ${entry.status === 'current' ? 'edu-current' : ''}`}>
-                {/* Left: Year */}
-                <div className="edu-period-col">
-                  <span className="edu-period">{entry.period}</span>
-                </div>
+        {/* Vertical Timeline */}
+        <div className="timeline-container">
+          <div className="timeline-spine" aria-hidden="true" />
 
-                {/* Center: Connector */}
-                <div className="edu-connector">
-                  <div className={`edu-node ${entry.status === 'current' ? 'edu-node-active' : ''}`}>
-                    <span className="edu-node-icon">{entry.icon}</span>
-                  </div>
-                  {i < educationHistory.length - 1 && <div className="edu-connector-line" />}
-                </div>
-
-                {/* Right: Card */}
-                <div className="edu-card glass-card">
-                  <div className="edu-card-header">
-                    <div className="edu-card-title-group">
-                      <h3 className="edu-card-title">{entry.title}</h3>
-                      <span className="edu-card-institution">{entry.institution}</span>
-                    </div>
-                    <span className={`edu-status-badge ${entry.badgeColor}`}>{entry.badge}</span>
+          <div className="timeline-list">
+            {educationHistory.map((item, idx) => (
+              <Reveal key={item.id} delay={idx * 100}>
+                <div className={`timeline-entry ${item.status === 'current' ? 'is-current' : ''}`}>
+                  {/* Timeline Indicator Node */}
+                  <div className="timeline-node" aria-hidden="true">
+                    <span className="node-inner" />
                   </div>
 
-                  <p className="edu-card-desc">{entry.desc}</p>
-
-                  {entry.highlights && (
-                    <div className="edu-highlights">
-                      {entry.highlights.map(h => (
-                        <span key={h} className="edu-highlight-tag">{h}</span>
-                      ))}
+                  {/* Timeline Card */}
+                  <div className="timeline-card">
+                    <div className="timeline-card-header">
+                      <div>
+                        <span className="timeline-period">{item.period}</span>
+                        <h3 className="timeline-title">{item.title}</h3>
+                        <p className="timeline-institution">{item.institution}</p>
+                      </div>
+                      <span className={`status-pill ${item.status === 'current' ? 'pill-active' : 'pill-done'}`}>
+                        {item.badge}
+                      </span>
                     </div>
-                  )}
+
+                    <p className="timeline-desc">{item.desc}</p>
+
+                    <div className="timeline-coursework">
+                      <span className="coursework-label">Key Coursework / Focus Areas:</span>
+                      <div className="coursework-tags">
+                        {item.highlights.map((h) => (
+                          <span key={h} className="coursework-tag">
+                            {h}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </Reveal>
-          ))}
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>
