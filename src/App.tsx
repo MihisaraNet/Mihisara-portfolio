@@ -15,15 +15,14 @@ function App() {
         Skip to main content
       </a>
 
-      {/* Animated Background */}
+      {/* Subtle Developer Background Grid & Ambient Blue Glow */}
       <div className="bg-grid" aria-hidden="true" />
-      <div className="bg-orbs" aria-hidden="true">
-        <div className="orb orb-1" />
-        <div className="orb orb-2" />
-        <div className="orb orb-3" />
+      <div className="bg-ambient" aria-hidden="true">
+        <div className="ambient-blue ambient-1" />
+        <div className="ambient-blue ambient-2" />
       </div>
 
-      {/* Navigation */}
+      {/* Sticky Navigation */}
       <Navbar />
 
       {/* Main Content Landmark */}

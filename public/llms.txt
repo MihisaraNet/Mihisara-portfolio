@@ -7,7 +7,7 @@
 - **Professional Title**: Software Engineer & Full-Stack Developer
 - **Academic Status**: Undergraduate Student, BSc (Hons) in Information Technology
 - **Institution**: Sri Lanka Institute of Information Technology (SLIIT)
-- **Location**: Matara, Southern Province, Sri Lanka (Open to remote and on-site opportunities)
+- **Location**: Colombo, Western Province, Sri Lanka (Open to remote and on-site opportunities)
 - **Official Portfolio**: https://mihisara-portfolio.vercel.app/
 - **Verified GitHub**: https://github.com/MihisaraNet
 - **Verified LinkedIn**: https://www.linkedin.com/in/isula-mihisara
@@ -64,6 +64,13 @@ Isula Mihisara is actively seeking internship and junior engineering opportuniti
 - **Technologies**: Spring Boot, Java 21, OOP, JavaScript, REST API.
 - **Key Features**: Vehicle fleet catalog, automated rate calculation, reservation scheduling, client-side dynamic search.
 - **Repository**: https://github.com/MihisaraNet/RentalX
+
+### RideLink — Microservices Ride-Hailing Backend Platform
+- **Problem**: Large-scale ride-hailing platforms require decoupled, highly available services for authentication, driver telematics, trip dispatching, and automated billing to eliminate single-point failures and enable independent horizontal scaling.
+- **Solution**: Engineered an enterprise-grade microservices architecture featuring 4 autonomous Spring Boot 3 services (Account: 8081, Driver & Vehicle: 8082, Ride Management: 8083, Fare & Payment: 8084) using a strict database-per-service pattern with MongoDB, non-blocking RestClient inter-service communication, and full Docker Compose containerization.
+- **Technologies**: Java 21, Spring Boot 3, Spring Security, MongoDB, Docker, Docker Compose, JWT, RestClient, Swagger/OpenAPI, Maven, GitHub Actions CI.
+- **Key Features**: Database-per-service isolation, automated nearest-driver dispatching, dynamic upfront/final fare estimation, multi-stage Docker builds, health-check dependencies, per-service GitHub Actions CI pipelines, interactive Swagger documentation.
+- **Repository**: https://github.com/MihisaraNet/RideLink_AD_IT3130
 
 ## 5. Education History
 - **BSc (Hons) in Information Technology** — Sri Lanka Institute of Information Technology (SLIIT), 2024 — Present
